@@ -1,0 +1,25 @@
+.AboutHeading{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    
+    text-align: center;
+
+}
+
+.AboutParagraph {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 20px;
+    width: 1400px; /* Adjust the width as needed */
+    text-align: justify;
+ 
+  }
+  
+  .AboutParagraph br {
+    display: none; /* Remove line breaks */
+  }
+  
+  /* You can add additional styling as needed */
+  

@@ -1,0 +1,33 @@
+.CostToStart{
+    font-size: 36px; /* Adjust font size as needed */
+    font-family: 'Arial', sans-serif; /* Specify the desired font family */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text horizontally */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+.ReceiptIcon{
+    font-size: 10px; /* Adjust font size as needed */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 20px; /* Add space below the icon */
+
+}
+
+.AutomationFee{
+    font-size: 10px; /* Adjust font size as needed */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 20px; /* Add space below the icon */
+}
+.PaymentContainer{
+    display: flex; /* Display the container as a flex container */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-bottom: 20px; /* Add space below the container */
+    justify-content:space-around;
+    
+
+}

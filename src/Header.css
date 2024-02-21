@@ -1,0 +1,47 @@
+.headerTop{
+    background-color: rgb(74, 97, 97);;
+    padding: 20px 25px;
+    position: relative;
+}
+.HeaderLine{
+
+    font-weight: 800;
+    font-size: 70px;
+    color: #fff;
+    
+}
+
+.ParaLine{
+    font-size: 40px;
+    color: #fff;
+    padding: 20px 0;
+}
+.bookcall{
+    padding: 15px 80px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    display: flex;
+}
+.bookcall:hover{
+    background-color: green;
+    color: #fff;
+}
+.img{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 80%;
+    width: 400px; /* Set the width */
+    height: 400px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    filter: brightness(0.7); 
+  
+
+}

@@ -1,0 +1,157 @@
+/* Styles for the parent container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color:  rgb(74, 97, 97);  /* Changed from bg-gray-900 to hex color */
+  width: 100%;
+}
+
+/* Styles for the left section */
+.left-section {
+  flex-basis: 33.33%;
+  border-right: 1.5px solid #fff; /* Changed from border-r-[1.5px] to border-right */
+}
+
+.left-section-content {
+  padding: 58px 20px;
+  color: #fff;
+}
+
+.left-section-content h1 {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  font-weight: 500; /* Equivalent to font-medium */
+}
+
+.left-section-content .menu-list {
+  display: flex;
+  list-style: none;
+  margin-top: 0.625rem; /* Equivalent to mt-5 */
+}
+
+.left-section-content .menu-list li {
+  margin-right: 0.5rem; /* Equivalent to mr-2 */
+  margin-left: 0.5rem; /* Equivalent to ml-2 */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.left-section-content .menu-list li:hover {
+  color: #f39e3a; /* Changed from hover:text-[#f39e3a] to hex color */
+}
+.left-section-content .left-section-content-name {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.menu-list ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add margin between list items */
+}
+
+.menu-list ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.menu-list ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Text color */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.menu-list ul li a:hover {
+  color: orangered; /* Change text color on hover */
+}
+
+.second-section {
+  background-color:  rgb(74, 97, 97); ;
+}
+.second-section {
+  flex-basis: 33.33%;
+  border-right: 1.5px solid #fff; /* Changed from border-r-[1.5px] to border-right */
+}
+
+.second-section-content {
+  padding: 60px 100px; /* Adjusted padding for better alignment */
+  color: #fff;
+}
+
+.second-section-content-name {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.second-section-content-name {
+  font-size: 10px;
+}
+.content1 {
+  display: flex;
+  align-items: center;
+}
+.content3 {
+  display: flex;
+  align-items: center;
+}
+.content2 {
+  display: flex;
+  align-items: center;
+}
+
+.second-section-content-name h1 {
+  margin: 10px 0px;
+}
+
+.second-section-content-name .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 20px;
+  align-items: center; /* Add margin to the right side of the icon */
+}
+
+/* Styles for the right section */
+.right-section {
+  flex-basis: 33.33%;
+}
+
+.right-section-content {
+  padding: 18px 20px; /* Adjusted padding for better alignment */
+  text-align: center;
+  color: #fff;
+}
+
+.right-section-content h1 {
+  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-weight: 500; /* Equivalent to font-medium */
+}
+
+.right-section-content p {
+  margin-top: 0.625rem; /* Equivalent to mt-5 */
+}
+
+.right-section-content .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625rem; /* Equivalent to mt-5 */
+}
+
+.right-section-content .social-links a {
+  padding: 3px; /* Equivalent to p-1.5 */
+  height: 1.7rem; /* Equivalent to h-9 */
+  width: 1.7rem; /* Equivalent to w-9 */
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 0.75rem; /* Equivalent to mr-3 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.right-section-content .social-links a:hover {
+  background-color: #f39e3a; /* Changed from hover:bg-[#f39e3a] to hex color */
+  color: #38b2ac; /* Changed from hover:text-teal-600 to hex color */
+}

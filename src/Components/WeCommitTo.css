@@ -1,0 +1,78 @@
+.wctcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+   
+  }
+  
+
+  
+  .wctbox1 {
+    font-size: 8px; 
+    font-family: Arial, sans-serif;  
+    color: white;
+    text-align: center; 
+    letter-spacing: 1px; 
+    background-color: darkgreen;
+    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+ 
+}
+
+  
+  .wctbox2 {
+    font-size: 8px; 
+    font-family: Arial, sans-serif;  
+    color: white;
+    text-align: center; 
+     
+    letter-spacing: 1px; 
+
+    background-color: darkmagenta;
+    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+  }
+  
+  .wctbox3 {
+    font-size: 8px; 
+    font-family: Arial, sans-serif;  
+    color: white;
+    text-align: center; 
+    
+    letter-spacing: 1px;
+
+    background-color: brown;
+    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+  }
+  
+  .wctbox4 {
+    font-size: 8px; 
+    font-family: Arial, sans-serif;  
+    color: white;
+    text-align: center; 
+  
+    letter-spacing: 1px; 
+
+    background-color: darkblue;
+    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+  }
+  .wtcHeading{
+    font-size: 36px; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 20px; 
+  }

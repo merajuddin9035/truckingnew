@@ -1,0 +1,97 @@
+.navbar {
+  background-color: rgb(74, 97, 97); /* Background color for the navbar */
+  color: #fff; /* Text color */
+  padding: 5px 0; /* Add padding at the top and bottom */
+
+}
+
+.navbar-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the items */
+  align-items: center; /* Align items vertically */
+  max-width: 1300px; /* Set maximum width */
+  margin: 20px 30px; /* Center the navbar horizontally */
+  padding: 0px; /* Add padding to the sides */
+
+}
+
+ .Advaitheading {
+  text-align: center;
+  font-size: 52px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 10px 8px 0px rgba(12, 12, 12, 0.3);
+  color: #fff;
+
+
+}
+
+
+
+
+
+
+.menu ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.menu ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add margin between list items */
+}
+
+.menu ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.menu ul li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Text color */
+  transition: color 0.3s ease; /* Add transition effect */
+}
+
+.menu ul li a:hover {
+  color: orangered; /* Change text color on hover */
+}
+
+.language-dropdown select {
+  border-radius: 5px; /* Add border radius */
+  border: 1px solid #fff; /* Add border */
+  background-color: #444; /* Background color */
+  color: #fff; /* Text color */
+}
+
+.ButtonName {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 62px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.ButtonName:hover {
+  background-color: #28c128; /* Darker Green */
+}
+
+.ButtonName:active {
+  background-color: #3f8d42; /* Active Green */
+}
+.GetStartedButton {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-left: 0%;
+  padding-left: 0px;
+  margin-left: 500px;
+}
+
+

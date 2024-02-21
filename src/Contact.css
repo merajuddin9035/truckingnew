@@ -1,0 +1,117 @@
+.conatiner1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row ;
+    margin: 80px 90px;
+    border-radius: 40px;
+    
+  
+
+}
+
+.container{
+    color: #fff; /* Set text color */
+    background-color:  rgb(74, 97, 97); ;
+    border-radius: 20px;
+}
+
+.contact {
+    padding: 30px;
+  }
+  
+  .contact h1 {
+    font-size: 2rem;
+    color: #fff; 
+  }
+  
+  .contact p {
+    font-size: 1.5rem;
+    color: #fff; 
+  
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    display: flex;
+  }
+  
+
+  
+  .contact-info h2 {
+    font-size: 1.5rem;
+    color: orangered; 
+
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #fff; 
+  }
+
+  .contact-form {
+    padding: 50px 120px; 
+    margin: 20px 50px;
+    background-color:  rgb(74, 97, 97); ;
+    border-radius: 40px; 
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px; 
+    color: #fff; 
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form form div {
+    margin-bottom: 15px; 
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 100%; /* Make inputs and textarea take full width */
+    padding: 10px; /* Add padding inside inputs and textarea */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 20px; /* Add border radius */
+  }
+  
+  .contact-form textarea {
+    height: 100px; /* Set height for the textarea */
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #007bff; /* Set background color for the submit button */
+    color: #fff; /* Set text color for the submit button */
+    padding: 10px 20px; /* Add padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+  .scroll-up {
+    position: fixed; /* Position the scroll-up button */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 20px; /* Add padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .scroll-up:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+  

@@ -1,0 +1,97 @@
+.container1 {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(74, 97, 97);
+  box-shadow: 0px 2px 10px #0a0a0a;
+  padding: 100px ;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  border-radius: 30px;
+  margin-left: 100px;
+  color: white;
+}
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+}
+.Heading {
+  font-size: 44px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 200px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: rgb(243, 67, 14); /* Default color */
+  margin-bottom: 10px;
+  overflow: hidden; /* Hide overflow to prevent text from appearing before animation */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.paragraph::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid #666; /* Adjust thickness and color of typing line */
+  margin-right: 5px; /* Adjust spacing between line and text */
+  animation: typing-animation 20s steps(1800, end) infinite;
+}
+
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.subscribeinput[type="text"] {
+  padding: 16px 2px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.3s ease;
+  width: 30%;
+  border-radius: 20px;
+  border-color: #333;
+  margin-left: 200px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+input[type="text"]::placeholder {
+  color: #999; /* Placeholder text color */
+}
+.Subscribe {
+  padding: 12px 30px;
+  background-color: #484c51;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.Subscribe:hover {
+  background-color: orangered;
+}

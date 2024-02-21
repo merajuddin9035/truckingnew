@@ -1,0 +1,46 @@
+.HeadContainer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.HeadingAutomation {
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.iconAndText {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.iconAndText .icon {
+  margin-right: 50px;
+}
+
+.textContainer {
+  text-align: left;
+}
+
+.HeadLine {
+  margin: 0;
+  font-size: 24px;
+  color: red;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0; /* Adjust if needed */
+  font-size: 20px;
+}

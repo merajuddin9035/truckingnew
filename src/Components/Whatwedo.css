@@ -60,3 +60,61 @@
     padding-bottom: 5px;
 
   }
+
+  @media screen and (max-width: 768px) {
+    .image-container {
+      padding: 10px; /* Add padding for better spacing */
+      overflow: hidden; /* Ensure content stays within the image container */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content horizontally */
+    }
+  
+    .truck-image {
+      width: 100%; /* Make the image responsive */
+      margin-bottom: 0px;
+      height: 620px; /* Add margin at the bottom of the image */
+    }
+  
+    .WhatweDoHeading {
+      margin-top: 25px;
+      font-size: 20px;
+      text-align: center; /* Center the heading */
+      margin-bottom: 5px; /* Add margin at the bottom of the heading */
+    }
+  
+    .overlay-text {
+      position: absolute; /* Position the text absolutely within the container */
+      top: 8%; /* Position the text closer to the top of the image */
+      left: 1%; /* Position the text horizontally centered */
+      transform: translateX(-50%); /* Center the text horizontally */
+      z-index: 1; /* Ensure text appears on top of the image */
+      color: white; /* Set text color */ /* Set font size */
+      text-align: center; /* Align text to the center */
+      text-shadow: 2px 2px 4px rgba(194, 35, 35, 0.5); /* Add text shadow for better visibility */
+      
+    }
+  
+    .ArrowLine {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .itemflex {
+      border-bottom: 1px solid #ccc; /* Add a solid line with 1px thickness and gray color */
+      margin: 1px 0;
+      padding-bottom: 1px;
+    }
+  
+    .itemflex p {
+      display: flex;
+      margin-left: 1px; /* Add margin between icon and text */
+      font-size: 7px; /* Adjust the font size as needed */
+    }
+    .ArrowLine p {
+      margin-left: 10px; /* Add left margin to create spacing between the icon and the text */
+    }
+  }
+  
+
+  

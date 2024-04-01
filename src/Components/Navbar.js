@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
-import advaitlogo from "../Assets/Advaitlogo.png"; // Use forward slashes or double backslashes for path separators
 
 export const Navbar = () => {
   const navigate = useNavigate();

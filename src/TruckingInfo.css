@@ -44,3 +44,41 @@ p {
   margin-bottom: 0; /* Adjust if needed */
   font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+
+ 
+  .HeadContainer {
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .HeadingAutomation {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    margin-bottom: 20px; /* Add margin between items */
+  }
+
+  .iconAndText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 10px; /* Add margin below icons */
+  }
+
+  .HeadLine {
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add margin below headings */
+  }
+
+  .textContainer p {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+}
+

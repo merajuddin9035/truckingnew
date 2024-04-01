@@ -29,3 +29,42 @@
     margin: 20px 10%;
 
 }
+
+@media screen and (max-width: 768px) {
+  .Future{
+    font-size: 17px; /* Adjust font size as needed */
+    font-family: 'Arial', sans-serif; /* Specify the desired font family */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center the text horizontally */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 1px; /* Adjust letter spacing */
+    text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+
+  .futurecontainer {
+    font-size: 7px;
+    font-family: 'Arial', sans-serif;
+    color: #f30909;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 24px;
+}
+.futurebox {
+    flex: 0 1 calc(20% - 20px); /* 20% width with 20px margin between boxes */
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 10%;
+
+}
+
+.truck-imagess{
+  width: 100%;
+  height: 100%;
+}
+}

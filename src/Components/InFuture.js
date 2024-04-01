@@ -14,19 +14,19 @@ export const InFuture = () => {
 
 
             <div className='futurebox'>
-            <img className="truck-images" src={multipletruck} alt="Truck" width="400" height="350" />
+            <img className="truck-imagess" src={multipletruck} alt="Truck" width="400" height="350" />
             <br />
              <h1>SCALE FIRST FLEET TO 250,000 TRUCKS</h1>
             </div>
 
             <div className='futurebox'>
-            <img className="truck-images" src={profit} alt="Truck" width="400" height="350" />
+            <img className="truck-imagess" src={profit} alt="Truck" width="400" height="350" />
             <br />
             <h1>KEEP OUR CLIENTS PROFITING,AND OURSELVES OF COURSE</h1>
             </div>
 
             <div className='futurebox'>
-            <img className="truck-images" src={airsea} alt="Truck" width="400" height="350" />
+            <img className="truck-imagess" src={airsea} alt="Truck" width="400" height="350" />
             <br />
             <h1>EXPAND TO SEA FREIGHT,AND AIR FREIGHT</h1>
             <br />

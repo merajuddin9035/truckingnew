@@ -30,4 +30,26 @@
       opacity: 1; /* End of animation: show */
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .WhatMakePowerFullPara {
+    font-size: 12px; 
+    line-height: 1.5; 
+    padding: 20px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    .WhatMakePowerFullPara::after {
+      content: ''; /* Add content after the paragraph */
+      display: inline-block; /* Display as inline-block */
+      width: 2px; /* Set width */
+      height: 15px; /* Set height */
+      background-color: red; /* Set background color */
+      margin-left: 5px; /* Add margin between text and bullet */
+      animation: blink 0.5s infinite; /* Apply blinking animation */
+    }
+
+    
+  }
+  
   

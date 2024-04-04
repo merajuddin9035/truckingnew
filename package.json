@@ -46,5 +46,12 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
+  },
+  "overrides": {
+    "google-maps-react": {
+      "peerDependencies": {
+        "react": "^18.2.0"
+      }
+    }
   }
 }

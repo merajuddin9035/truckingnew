@@ -22,4 +22,28 @@
   }
   
   /* You can add additional styling as needed */
+  @media screen and (max-width: 768px) {
+    .AboutHeading{
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      text-align: center;
   
+  }
+  
+  .AboutParagraph {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: 20px;
+      width: 680px; /* Adjust the width as needed */
+      text-align: justify;
+   
+    }
+    
+    .AboutParagraph br {
+      display: none; /* Remove line breaks */
+    }
+    
+  
+  }

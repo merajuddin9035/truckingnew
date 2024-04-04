@@ -73,7 +73,8 @@
 }
 
 .ButtonName:hover {
-  background-color: #fff; /* Darker Green */
+  background-color: green;
+  color: #fff;/* Darker Green */
 }
 
 .ButtonName:active {

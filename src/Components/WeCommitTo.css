@@ -8,61 +8,61 @@
 
   
   .wctbox1 {
-    font-size: 8px; 
+    font-size: 7px; 
     font-family: Arial, sans-serif;  
     color: white;
     text-align: center; 
     letter-spacing: 1px; 
-    background-color: darkgreen;
-    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
-    border-radius: 10px;
+    background-color: rgb(18, 42, 137);
+    box-shadow: 10px 10px 40px #464444;
     margin: 30px;
     padding: 20px;
+    border-radius: 50px;
  
 }
 
   
   .wctbox2 {
-    font-size: 8px; 
+    font-size: 7px; 
     font-family: Arial, sans-serif;  
     color: white;
     text-align: center; 
      
     letter-spacing: 1px; 
 
-    background-color: darkmagenta;
-    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
-    border-radius: 10px;
+    background-color: rgb(238, 11, 11);
+    box-shadow: 10px 10px 40px #464444;
+    border-radius: 50px;
     margin: 30px;
     padding: 20px;
   }
   
   .wctbox3 {
-    font-size: 8px; 
+    font-size: 7px; 
     font-family: Arial, sans-serif;  
     color: white;
     text-align: center; 
     
     letter-spacing: 1px;
 
-    background-color: brown;
-    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
-    border-radius: 10px;
+    background-color: rgb(12, 213, 22);
+    box-shadow: 10px 10px 40px #464444;
+    border-radius: 50px;
     margin: 30px;
     padding: 20px;
   }
   
   .wctbox4 {
-    font-size: 8px; 
+    font-size: 7px; 
     font-family: Arial, sans-serif;  
     color: white;
     text-align: center; 
   
     letter-spacing: 1px; 
 
-    background-color: darkblue;
-    box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
-    border-radius: 10px;
+    background-color: rgb(157, 80, 4);
+    box-shadow: 10px 10px 40px #464444;
+    border-radius: 50px;
     margin: 30px;
     padding: 20px;
   }
@@ -93,7 +93,7 @@
       color: white;
       text-align: center; 
       letter-spacing: 1px; 
-      background-color: darkgreen;
+      background-color: rgb(3, 5, 33);
       box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
       border-radius: 10px;
       margin: 30px;
@@ -140,7 +140,7 @@
     
       letter-spacing: 1px; 
   
-      background-color: darkblue;
+      background-color: rgb(139, 0, 0);
       box-shadow: 0 4px 8px rgba(30, 28, 28, 0.3);
       border-radius: 10px;
       margin: 30px;

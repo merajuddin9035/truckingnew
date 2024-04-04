@@ -1,91 +1,301 @@
 // Footer.js
 import React from "react";
 import "./Footer.css"; // Import the Footer.css file
-import CallIcon from "@mui/icons-material/Call";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LocalShippingTwoToneIcon from "@mui/icons-material/LocalShippingTwoTone";
-import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import CallIcon from "@mui/icons-material/Call";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import LocationOnIcon from "@mui/icons-material/LocationOn";
+// import LocalShippingTwoToneIcon from "@mui/icons-material/LocalShippingTwoTone";
+// import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div class="footer-container">
-        <div class="left-section">
-          <div class="left-section-content">
-            <div class="left-section-content-name">
-              <h1>____</h1>
-              <LocalShippingTwoToneIcon fontSize="large" />
-              <h1>_Advait_Trucking_Automation</h1>
-            </div>
-
-            <div class="menu-list">
-            <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/finance">Finance Application</Link>
-            </li>
-              <li>
-              <Link to="/Contact">Contact us</Link>
-            </li>
-              <li>
-              <Link to="/about">About us</Link>
-            </li>
-            </ul>
-            </div>
-            <p>Advait Trucking Automation &copy; All rights reserved.</p>
-          </div>
-        </div>
-
-        <div class="second-section">
-          <div class="second-section-content">
-            <div class="second-section-content-name">
-              <div className="content1">
-                <CallIcon />
-                <h1>+91 1234567890</h1>
-              </div>
-              <div className="content2">
-                <EmailTwoToneIcon />
-                <h1> XYZ@gmail.com</h1>
-              </div>
-
-              <div className="content3">
-                <LocationOnIcon />
-                <h1>1331 Masood ct Canton Mi 48188</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="right-section">
-          <div class="right-section-content">
-            <h1>What we are providing you</h1>
-            <p class="mt-5">
-              Welcome to our trucking service provider app, where reliability
-              meets efficiency on the road. Effortlessly book, track, and manage
-              your shipments with our user-friendly trucking service app,
-              putting control in your hands.
+   <>
+   <div className="footerContainer ">
+        <div className="a ">
+          <div className=" b ">
+            <p className="c">
+              {" "}
+              <span className="subscribebutton">
+                Subscribe
+              </span>{" "}
+              us for get news events and offers
             </p>
+          </div>
+          <div className="e">
+            <form action=" w-full">
+              <div className="inputbutton">
+              <input className='subscribeinput' type="text" placeholder='yourmail@.com' />
+              <button class="Subscribe">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
-            <div class="social-links mt-5">
-              <a href="#" class="icon">
-                <WhatsAppIcon />
-              </a>
-              <a href="#" class="icon">
-                <InstagramIcon />
-              </a>
-              <a href="#" class="icon">
-                <FacebookIcon />
-              </a>
+        <div className="i">
+          <div className="j">
+            <div className="k">
+              <div className="l ">
+                <div className=" m">
+                  {/* <Link
+                    to="/"
+                    className="n"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="250"
+                      zoomAndPan="magnify"
+                      viewBox="0 0 600 112.499997"
+                      height="50"
+                      preserveAspectRatio="xMidYMid meet"
+                      version="1.0"
+                    >
+                      <defs>
+                        <g />
+                      </defs>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(14.791682, 71.446088)">
+                          <g>
+                            <path d="M 28.46875 -7.09375 L 13.859375 -7.09375 L 11.046875 0 L -0.21875 0 L 15.484375 -40.8125 L 27.0625 -40.8125 L 42.4375 0 L 31.125 0 Z M 25.59375 -15.203125 L 21.265625 -28.203125 L 21.15625 -28.203125 L 16.78125 -15.203125 Z M 25.59375 -15.203125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(57.049632, 71.446088)">
+                          <g>
+                            <path d="M 19.8125 0 L 3.46875 0 L 3.46875 -40.8125 L 18.625 -40.8125 C 22.257812 -40.769531 25.1875 -39.957031 27.40625 -38.375 C 29.632812 -36.789062 30.75 -34.046875 30.75 -30.140625 C 30.75 -28.304688 30.410156 -26.664062 29.734375 -25.21875 C 29.066406 -23.78125 27.90625 -22.644531 26.25 -21.8125 L 26.25 -21.765625 C 29.175781 -21.359375 31.296875 -20.226562 32.609375 -18.375 C 33.921875 -16.519531 34.578125 -14.164062 34.578125 -11.3125 C 34.578125 -7.050781 33.050781 -4.097656 30 -2.453125 C 26.957031 -0.816406 23.5625 0 19.8125 0 Z M 14.078125 -16.890625 L 14.078125 -8.125 L 15.421875 -8.125 C 15.460938 -8.082031 15.507812 -8.0625 15.5625 -8.0625 C 15.613281 -8.0625 15.675781 -8.0625 15.75 -8.0625 C 16.1875 -8.0625 16.640625 -8.0625 17.109375 -8.0625 C 17.578125 -8.0625 18.046875 -8.082031 18.515625 -8.125 C 19.847656 -8.226562 21.070312 -8.566406 22.1875 -9.140625 C 23.3125 -9.722656 23.875 -10.804688 23.875 -12.390625 C 23.875 -14.234375 23.257812 -15.425781 22.03125 -15.96875 C 20.800781 -16.507812 19.46875 -16.796875 18.03125 -16.828125 C 17.695312 -16.828125 17.359375 -16.828125 17.015625 -16.828125 C 16.679688 -16.828125 16.347656 -16.828125 16.015625 -16.828125 C 15.867188 -16.828125 15.722656 -16.828125 15.578125 -16.828125 C 15.441406 -16.828125 15.300781 -16.828125 15.15625 -16.828125 Z M 14.078125 -32.6875 L 14.078125 -24.796875 L 15.265625 -24.796875 C 15.296875 -24.753906 15.335938 -24.734375 15.390625 -24.734375 C 15.453125 -24.734375 15.519531 -24.734375 15.59375 -24.734375 C 16.925781 -24.773438 18.160156 -25.03125 19.296875 -25.5 C 20.429688 -25.96875 21 -27.03125 21 -28.6875 C 21 -30.34375 20.457031 -31.40625 19.375 -31.875 C 18.289062 -32.34375 17.117188 -32.597656 15.859375 -32.640625 C 15.679688 -32.640625 15.507812 -32.640625 15.34375 -32.640625 C 15.175781 -32.640625 15.003906 -32.640625 14.828125 -32.640625 Z M 14.078125 -32.6875 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(93.680407, 71.446088)">
+                          <g>
+                            <path d="M 23.984375 -42.15625 C 29.859375 -42.125 35.085938 -40.148438 39.671875 -36.234375 C 44.253906 -32.316406 46.546875 -27.273438 46.546875 -21.109375 C 46.546875 -14.503906 44.425781 -9.109375 40.1875 -4.921875 C 35.945312 -0.734375 30.546875 1.359375 23.984375 1.359375 C 17.453125 1.359375 12.054688 -0.734375 7.796875 -4.921875 C 3.535156 -9.109375 1.40625 -14.503906 1.40625 -21.109375 C 1.40625 -27.273438 3.695312 -32.316406 8.28125 -36.234375 C 12.863281 -40.148438 18.097656 -42.109375 23.984375 -42.109375 Z M 23.984375 -31.875 C 20.804688 -31.84375 18.085938 -30.734375 15.828125 -28.546875 C 13.578125 -26.367188 12.453125 -23.867188 12.453125 -21.046875 C 12.453125 -17.546875 13.578125 -14.640625 15.828125 -12.328125 C 18.085938 -10.023438 20.804688 -8.875 23.984375 -8.875 C 27.148438 -8.875 29.859375 -10.023438 32.109375 -12.328125 C 34.367188 -14.640625 35.5 -17.546875 35.5 -21.046875 C 35.5 -23.867188 34.367188 -26.367188 32.109375 -28.546875 C 29.859375 -30.734375 27.148438 -31.828125 23.984375 -31.828125 Z M 23.984375 -31.875 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(141.673763, 71.446088)">
+                          <g />
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(160.23264, 71.446088)">
+                          <g>
+                            <path d="M 14.078125 -25.0625 L 29.390625 -25.0625 L 29.390625 -40.8125 L 40 -40.8125 L 40 0 L 29.390625 0 L 29.390625 -16.71875 L 14.078125 -16.71875 L 14.078125 0 L 3.46875 0 L 3.46875 -40.8125 L 14.078125 -40.8125 Z M 14.078125 -25.0625 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(203.68096, 71.446088)">
+                          <g>
+                            <path d="M 28.46875 -7.09375 L 13.859375 -7.09375 L 11.046875 0 L -0.21875 0 L 15.484375 -40.8125 L 27.0625 -40.8125 L 42.4375 0 L 31.125 0 Z M 25.59375 -15.203125 L 21.265625 -28.203125 L 21.15625 -28.203125 L 16.78125 -15.203125 Z M 25.59375 -15.203125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(245.93891, 71.446088)">
+                          <g>
+                            <path d="M 14.078125 -40.8125 L 14.078125 -8.984375 L 26.796875 -8.984375 L 26.796875 0 L 3.46875 0 L 3.46875 -40.8125 Z M 14.078125 -40.8125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(272.722115, 71.446088)">
+                          <g>
+                            <path d="M 28.46875 -7.09375 L 13.859375 -7.09375 L 11.046875 0 L -0.21875 0 L 15.484375 -40.8125 L 27.0625 -40.8125 L 42.4375 0 L 31.125 0 Z M 25.59375 -15.203125 L 21.265625 -28.203125 L 21.15625 -28.203125 L 16.78125 -15.203125 Z M 25.59375 -15.203125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(314.980066, 71.446088)">
+                          <g>
+                            <path d="M 14.078125 -40.8125 L 14.078125 -8.984375 L 26.796875 -8.984375 L 26.796875 0 L 3.46875 0 L 3.46875 -40.8125 Z M 14.078125 -40.8125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(341.76327, 71.446088)">
+                          <g />
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(360.322147, 71.446088)">
+                          <g>
+                            <path d="M 1.03125 0 L 7.953125 -40.8125 L 18.40625 -40.8125 L 26.6875 -19 L 35.453125 -40.8125 L 46 -40.8125 L 52.171875 0 L 41.5625 0 L 38.59375 -23.484375 L 38.484375 -23.484375 L 28.6875 0 L 24.46875 0 L 15.09375 -23.484375 L 15 -23.484375 L 11.578125 0 Z M 1.03125 0 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(413.509822, 71.446088)">
+                          <g>
+                            <path d="M 28.46875 -7.09375 L 13.859375 -7.09375 L 11.046875 0 L -0.21875 0 L 15.484375 -40.8125 L 27.0625 -40.8125 L 42.4375 0 L 31.125 0 Z M 25.59375 -15.203125 L 21.265625 -28.203125 L 21.15625 -28.203125 L 16.78125 -15.203125 Z M 25.59375 -15.203125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(455.767789, 71.446088)">
+                          <g>
+                            <path d="M 24.578125 -16.71875 L 37.40625 0 L 24.1875 0 L 14.1875 -15.703125 L 14.078125 -15.703125 L 14.078125 0 L 3.46875 0 L 3.46875 -40.8125 L 19.328125 -40.8125 C 23.367188 -40.769531 26.738281 -39.75 29.4375 -37.75 C 32.144531 -35.75 33.5 -32.566406 33.5 -28.203125 C 33.5 -25.390625 32.734375 -22.890625 31.203125 -20.703125 C 29.671875 -18.515625 27.460938 -17.171875 24.578125 -16.671875 Z M 14.078125 -32.6875 L 14.078125 -22.515625 L 15.09375 -22.515625 C 15.28125 -22.484375 15.460938 -22.46875 15.640625 -22.46875 C 15.816406 -22.46875 15.976562 -22.46875 16.125 -22.46875 C 17.71875 -22.53125 19.171875 -22.894531 20.484375 -23.5625 C 21.804688 -24.238281 22.46875 -25.566406 22.46875 -27.546875 C 22.46875 -29.535156 21.804688 -30.863281 20.484375 -31.53125 C 19.171875 -32.195312 17.71875 -32.566406 16.125 -32.640625 C 15.976562 -32.640625 15.816406 -32.640625 15.640625 -32.640625 C 15.460938 -32.640625 15.28125 -32.640625 15.09375 -32.640625 Z M 14.078125 -32.6875 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(492.560868, 71.446088)">
+                          <g>
+                            <path d="M 14.1875 -23.984375 L 27.015625 -40.8125 L 40.15625 -40.8125 L 23.921875 -21.484375 L 41.625 0 L 27.875 0 L 14.1875 -17.703125 L 14.078125 -17.703125 L 14.078125 0 L 3.46875 0 L 3.46875 -40.8125 L 14.078125 -40.8125 L 14.078125 -23.984375 Z M 14.1875 -23.984375 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(533.574357, 71.446088)">
+                          <g>
+                            <path d="M 26.6875 -31.828125 L 14.078125 -31.828125 L 14.078125 -25 L 26.03125 -25 L 26.03125 -16.015625 L 14.078125 -16.015625 L 14.078125 -8.984375 L 26.6875 -8.984375 L 26.6875 0 L 3.46875 0 L 3.46875 -40.8125 L 26.6875 -40.8125 Z M 26.6875 -31.828125 " />
+                          </g>
+                        </g>
+                      </g>
+                      <g fill="#ff0033" fill-opacity="1">
+                        <g transform="translate(563.333462, 71.446088)">
+                          <g>
+                            <path d="M 19.703125 -31.828125 L 19.703125 0 L 9.09375 0 L 9.09375 -31.828125 L 0.328125 -31.828125 L 0.328125 -40.8125 L 28.46875 -40.8125 L 28.46875 -31.828125 Z M 19.703125 -31.828125 " />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </Link> */}
+                </div>
+                <div className="StreamLine">
+                  Streamline your logistics with our comprehensive online trucking automation service
+                  </div>
+                <div className="p">
+                  <div className="q">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 1024 1024"
+                      className="r"
+                      height="25"
+                      width="25"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"></path>
+                    </svg>
+                  </div>
+                  <div className="s">
+                    <svg
+                      version="1.0"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 256.000000 256.000000"
+                      preserveAspectRatio="xMidYMid meet"
+                      className="ss"
+                    >
+                      <g
+                        transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
+                        fill="#000000"
+                        stroke="none"
+                      >
+                        <path
+                          d="M203 2542 c-100 -35 -171 -115 -193 -216 -8 -36 -10 -356 -8 -1076
+l3 -1025 28 -57 c32 -64 80 -111 146 -142 46 -21 49 -21 1101 -21 l1055 0 57
+28 c64 32 111 80 142 146 21 46 21 49 21 1101 0 1052 0 1055 -21 1101 -31 66
+-78 114 -142 146 l-57 28 -1040 2 c-978 2 -1043 1 -1092 -15z m948 -727 c101
+-134 189 -244 194 -244 6 0 106 110 223 245 l213 244 130 0 131 0 -40 -47
+c-23 -27 -151 -174 -286 -328 -135 -154 -244 -285 -242 -291 2 -6 150 -204
+328 -440 179 -236 328 -435 332 -442 6 -9 -48 -12 -257 -12 l-264 0 -201 264
+c-111 146 -206 268 -211 271 -5 3 -116 -116 -246 -265 l-236 -270 -131 0
+c-124 0 -130 1 -116 18 8 9 140 161 294 337 153 176 285 328 292 337 12 15
+-20 60 -264 380 -153 200 -299 391 -327 426 l-49 62 275 0 274 0 184 -245z"
+                        />
+                        <path
+                          d="M842 1762 c62 -81 277 -362 478 -625 l365 -477 73 0 74 0 -29 38
+c-15 21 -228 302 -472 625 l-444 587 -79 0 -79 0 113 -148z"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 1024 1024"
+                      height="25"
+                      width="25"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{
+                        color: "rgb(225, 48, 108)",
+                        marginLeft: "15px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="0"
+                      viewBox="0 0 1024 1024"
+                      height="25"
+                      width="25"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{
+                        color: "rgb(255, 0, 0)",
+                        marginLeft: "15px",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div className="  t  ">
+                <p className="u ">Company</p>
+                <div>
+                  <ul className="v">
+                    <Link to="/aboutus" className="aboutus">
+                      {" "}
+                      About us
+                    </Link>
+                    <Link to="/home" className="home">
+                      {" "}
+                      Home
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="w">
+                <p className="  x">Support</p>
+                <div>
+                  <ul className="y">
+                    <Link to="/about_us" className="">
+                      {" "}
+                      FAQ
+                    </Link>
+                    <Link to="/about_us" className="">
+                      {" "}
+                      Contact Us
+                    </Link>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="ab">
+          <p className="cd">
+            © 2024 Advait Trucking Automation. All rights reserved.
+          </p>
+          <p className="ef">Terms. Privacy Policy</p>
         </div>
       </div>
-    </footer>
+   </>
   );
 };

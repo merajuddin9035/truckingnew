@@ -63,15 +63,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 9px;
+        padding: 0px 10px;
         padding-top: 29px;
-        margin-left: 5px;
+        margin-left: 0px;
     }
     
     .box {
         flex: 0 1 calc(20% - 20px); /* 20% width with 20px margin between boxes */
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 27px;
         background-color: #f0f0f0;
         border: 1px solid #ccc;
         border-radius: 5px;

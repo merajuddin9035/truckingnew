@@ -5,7 +5,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 #000; 
-    background-color:  rgb(74, 97, 97); 
+    background-color: rgb(3, 5, 33);
     color: #fff;
  
     
@@ -48,4 +48,58 @@
   button:hover {
     background-color: #0056b3;
   }
+
+  @media screen and (max-width: 768px) {
+    .containersss {
+      width: 300px;
+      margin: 72px auto;
+      padding: 46px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 0 #000;
+      background-color: rgb(3, 5, 33);
+      color: #fff;
+   
+      
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .submit {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+  }
+  
   

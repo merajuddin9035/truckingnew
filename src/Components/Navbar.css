@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(74, 97, 97); /* Background color for the navbar */
+  background-color: rgb(3, 5, 33); /* Background color for the navbar */
   color: #fff; /* Text color */
   padding: 5px 0; /* Add padding at the top and bottom */
 
@@ -21,7 +21,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 10px 8px 0px rgba(12, 12, 12, 0.3);
   color: #fff;
 
 
@@ -57,12 +56,7 @@
   color: orangered; /* Change text color on hover */
 }
 
-.language-dropdown select {
-  border-radius: 5px; /* Add border radius */
-  border: 1px solid #fff; /* Add border */
-  background-color: #444; /* Background color */
-  color: #fff; /* Text color */
-}
+
 
 .ButtonName {
   background-color: red; /* Green */
@@ -79,11 +73,11 @@
 }
 
 .ButtonName:hover {
-  background-color: #28c128; /* Darker Green */
+  background-color: #fff; /* Darker Green */
 }
 
 .ButtonName:active {
-  background-color: #3f8d42; /* Active Green */
+  background-color: rgb(3, 5, 33);; /* Active Green */
 }
 .GetStartedButton {
   display: flex;
@@ -102,7 +96,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 10px 8px 0px rgba(12, 12, 12, 0.3);
+
     color: #fff;
   
   
@@ -141,10 +135,7 @@
     border-radius: 30px;
   }
 
-  .language-dropdown {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+
 }
 
 

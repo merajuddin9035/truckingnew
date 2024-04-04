@@ -37,22 +37,7 @@ export const Navbar = () => {
           </button>
         </div>
 
-        <div className="language-dropdown">
-          <select>
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="it">Italian</option>
-            <option value="pt">Portuguese</option>
-            <option value="ru">Russian</option>
-            <option value="ar">Arabic</option>
-            <option value="zh">Chinese</option>
-            <option value="ja">Japanese</option>
-            <option value="ko">Korean</option>
-            <option value="tr">Turkish</option>
-          </select>
-        </div>
+       
       </div>
     </div>
   );

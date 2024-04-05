@@ -34,7 +34,7 @@ function App(props) {
       
       <a href="#top" className="scroll-up">Back to top</a> {/* Scroll up button */}
       <Footer/>
- <div className='mapstyle'>
+ <div className='mapstyle'></div>
       <Map
   google={props.google}
   style={{ width: "30%", height: "400px" }} // Adjust height as needed
@@ -51,7 +51,6 @@ function App(props) {
     </div>
   </InfoWindow>
       </Map>
-      </div>
     </>
   );
 }

@@ -195,71 +195,197 @@ input[type="text"]::placeholder {
 
 @media only screen and (max-width: 768px) {
   .footerContainer {
-    .subscribeinput[type="text"] {
-      padding: 10px 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      font-size: 18px;
-      font-family: Arial, sans-serif;
-      transition: border-color 0.3s ease;
-      width: 40%;
-      border-radius: 20px;
-      border-color: #333;
-      margin-left: 100px;
-    }
-    
-    input[type="text"]:focus {
-      border-color: #007bff; /* Change border color on focus */
-    }
-    
-    input[type="text"]::placeholder {
-      color: #999; /* Placeholder text color */
-    }
-    .Subscribe {
-      padding: 15px 25px;
-      background-color: #484c51;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      border-radius: 50px;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-    
-    .Subscribe:hover {
-      background-color: orangered;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffff;
   }
-
+  
   .footerContainer .a {
     flex: 1 1 100%;
     background-color: #120225;
     color: #fff;
-    margin-top: 21px;
-    padding: 19px;
+    margin-top: 10px;
+    padding: 20px;
    
   }
-
+  
+  .footerContainer .b {
+    margin-bottom: 21px;
+    margin-left: 10px;
+    
+  }
+  
+  .footerContainer .c {
+    font-size: 33px;
+    
+  
+  }
+  
+  .footerContainer .subscribebutton {
+    color: #ff0033;
+    font-weight: bold;
+    
+  }
+  
+  .footerContainer form {
+   padding: 0px;
+    
+  }
+  
+  .footerContainer .g {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #130303;
+    border-radius: 50px;
+   
+  
+  }
+  
+  .footerContainer .h {
+    background-color: #ff0033;
+    color: #fff;
+    border: none;
+    padding: 16px 76px;
+    cursor: pointer;
+    border-radius: 50px;
+    
+  }
+  
+  .footerContainer .i {
+    flex: 1 1 100%;
+    margin-top: 55px;
+    display: flex;
+  }
+  
+  .footerContainer .j {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footerContainer .k {
+    flex: 1 1 50%;
+  }
+  
+  .footerContainer .l {
+  
+   margin-left: 10px;
+  }
+  
+  .footerContainer .m {
+    margin-right: 20px;
+  }
+  
+  .footerContainer .p {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .footerContainer .q,
+  .footerContainer .s {
+    margin: 10px;
+  }
+  
+  .footerContainer .r,
+  .footerContainer .ss {
+    vertical-align: middle;
+  }
+  
+  .footerContainer .t {
+    margin-top: 30px;
+  }
+  
+  .footerContainer .u,
+  .footerContainer .x {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footerContainer .v,
+  .footerContainer .y {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerContainer .v a,
+  .footerContainer .y a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footerContainer .v a:hover,
+  .footerContainer .y a:hover {
+    color: #ff0033;
+  }
+  
+  .footerContainer .w {
+    margin-top: 20px;
+  }
+  
+  .footerContainer .z {
+    flex: 1 1 50%;
+  }
+  
+  .footerContainer .ab {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerContainer .cd {
+    font-size: 15px;
+  }
+  
+  .footerContainer .ef {
+    font-size: 12px;
+    color: #333;
+  }
   .subscribeinput[type="text"] {
-    padding: 14px 10px;
+    padding: 7px 31px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 17px;
     font-family: Arial, sans-serif;
     transition: border-color 0.3s ease;
     width: 40%;
     border-radius: 20px;
     border-color: #333;
-    margin-left: 0px;
+    margin-left: 9px;
   }
-
-  .footerContainer form {
-    padding: 0px;
-     
-   }
+  
+  input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  .Subscribe {
+    padding: 11px 7px;
+    background-color: #484c51;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  .Subscribe:hover {
+    background-color: orangered;
+  }
+  
+  .StreamLine{
+    font-size: 20px;
+    margin-top: 2px;
+  
+  }
 }
 
 

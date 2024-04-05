@@ -31,25 +31,7 @@ export const Navbar = () => {
           </ul>
         </div>
 
-        <div className="GetStartedButton">
-          {/* <button className="" onClick={handleButtonClick}>
-            Get Started
-          </button> */}
-       
-        </div>
-        <div className="ButtonName">
-      <PopupButton
-        url="https://calendly.com/mdmeraju784"
-        /*
-         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-         */
-        rootElement={document.getElementById("root")}
-        text="Schedule Meeting"
-       
-      
-      />
-    </div>
+        
        
       </div>
     

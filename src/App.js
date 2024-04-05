@@ -10,16 +10,16 @@ import FinanceApplication from './Components/FinanceApplication';
 import { BookCallPage } from './Components/BookCallPage';
 // import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
-function App(props) {
-  const [selectedPlace, setSelectedPlace] = useState(null);
+function App() {
+  // const [selectedPlace, setSelectedPlace] = useState(null);
 
-  const onMarkerClick = (props, marker, e) => {
-    setSelectedPlace(props);
-  };
+  // const onMarkerClick = (props, marker, e) => {
+  //   setSelectedPlace(props);
+  // };
 
-  const onInfoWindowClose = () => {
-    setSelectedPlace(null);
-  };
+  // const onInfoWindowClose = () => {
+  //   setSelectedPlace(null);
+  // };
 
   return (
     <> 

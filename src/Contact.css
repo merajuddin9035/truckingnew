@@ -165,10 +165,11 @@
     }
   
     .contact-form {
-      padding: 10px 40px;
+      padding: 10px 100px;
       background-color: rgb(3, 5, 33);
       border-radius: 20px;
       width: 250px;
+      margin-left: 10px;
  
 
     }

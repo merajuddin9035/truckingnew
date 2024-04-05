@@ -56,7 +56,7 @@ export const TrucingInfo = () => {
       </div>
         <div className="textContainer">
           <h1 className='HeadLine'>OUR AVERAGE CLIENT</h1>
-          <p>nets between $4000-$6000</p>
+          <p>nets between ₹70,000 - ₹1,00,000</p>
         </div>
       </div>
     </div>

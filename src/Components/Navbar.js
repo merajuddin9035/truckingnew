@@ -1,15 +1,13 @@
 import React from "react";
 import "./Navbar.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PopupButton } from "react-calendly";
 
 
 export const Navbar = () => {
-  const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    navigate("/BookCallPage");
-  };
+
+ 
 
   return (
     
@@ -48,6 +46,7 @@ export const Navbar = () => {
          */
         rootElement={document.getElementById("root")}
         text="Schedule Meeting"
+       
       
       />
     </div>

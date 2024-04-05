@@ -118,14 +118,9 @@
   
   @media screen and (max-width: 768px) {
     .conatiner1{
-      display: flex;
-      justify-content: space-between;
-      flex-direction:row ;
-      margin: 10px 0px;
+      margin: 20px 10px;
       border-radius: 20px;
-      
-    
-  
+      flex-direction:column ;
   }
   
   .container{
@@ -135,11 +130,11 @@
   }
   
   .contact {
-      padding: 5px;
+      padding: 100px  60px;
     }
     
     .contact h1 {
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: #fff; 
     }
     
@@ -150,34 +145,36 @@
     }
     
     .contact-info {
-      display: flex;
+      
       justify-content: space-between;
       margin-top: 10px;
-      display: flex;
+    
     }
     
   
     
     .contact-info h2 {
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: orangered; 
   
     }
     
     .contact-info p {
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       color: #fff; 
     }
   
     .contact-form {
-      padding: 20px 40px; 
-      margin: 2px 50px;
+      padding: 10px 40px;
       background-color: rgb(3, 5, 33);
-      border-radius: 40px; 
+      border-radius: 20px;
+      width: 250px;
+ 
+
     }
     
     .contact-form h2 {
-     justify-content: space-between; 
+     padding: 10px;
       color: #fff; 
     }
     
@@ -193,20 +190,24 @@
     
     .contact-form input[type="text"],
     .contact-form textarea {
-      width: 100%; /* Make inputs and textarea take full width */
-      padding: 10px; /* Add padding inside inputs and textarea */
+      
+     /* Make inputs and textarea take full width */
+ /* Add padding inside inputs and textarea */
       border: 1px solid #ccc; /* Add border */
       border-radius: 20px; /* Add border radius */
     }
     
     .contact-form textarea {
-      height: 100%; /* Set height for the textarea */
+     
+      width: 250px;
+      height: 100px; /* Set height for the textarea */
     }
     
     .contact-form button[type="submit"] {
       background-color: #ff0000; /* Set background color for the submit button */
-      color: #fff; /* Set text color for the submit button */
-      padding: 10px 20px; /* Add padding inside the button */
+      color: #fff;
+      margin: 10px; /* Set text color for the submit button */
+      padding: 15px; /* Add padding inside the button */
       border: none; /* Remove border */
       border-radius: 50px; /* Add border radius */
       cursor: pointer; /* Add cursor pointer on hover */

@@ -364,8 +364,8 @@ input[type="text"]::placeholder {
     color: #999; /* Placeholder text color */
   }
   .Subscribe {
-    padding: 11px 7px;
-    background-color: #484c51;
+    padding: 8px 10px;
+    background-color: orangered;
     color: #fff;
     border: none;
     font-size: 17px;
@@ -378,7 +378,7 @@ input[type="text"]::placeholder {
   }
   
   .Subscribe:hover {
-    background-color: orangered;
+    background-color: rgb(232, 70, 11);
   }
   
   .StreamLine{

@@ -8,7 +8,7 @@ import Contact from './Contact';
 import './App.css';
 import FinanceApplication from './Components/FinanceApplication';
 import { BookCallPage } from './Components/BookCallPage';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+// import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 function App(props) {
   const [selectedPlace, setSelectedPlace] = useState(null);
@@ -34,7 +34,7 @@ function App(props) {
       
       <a href="#top" className="scroll-up">Back to top</a> {/* Scroll up button */}
       <Footer/>
- <div className='mapstyle'></div>
+ {/* <div className='mapstyle'></div>
       <Map
   google={props.google}
   style={{ width: "30%", height: "400px" }} // Adjust height as needed
@@ -50,11 +50,13 @@ function App(props) {
       <h1>{selectedPlace && selectedPlace.name}</h1>
     </div>
   </InfoWindow>
-      </Map>
+      </Map> */}
     </>
   );
 }
 
-export default GoogleApiWrapper({
-  apiKey: "AIzaSyAOEWFoidy1TR1kMz4dCo30K7aHRgwPtRY"
-})(App);
+// export default GoogleApiWrapper({
+//   apiKey: "AIzaSyAOEWFoidy1TR1kMz4dCo30K7aHRgwPtRY"
+// })(App);
+
+export default App;

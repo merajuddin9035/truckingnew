@@ -93,11 +93,10 @@
 
   .Advaitheading {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-
     color: #fff;
   
   
@@ -108,19 +107,20 @@
   }
 
   .menu {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .menu ul li {
     display: inline-block; /* Display list items horizontally */
-    margin-right: 15px; /* Add margin between list items */
+    margin-right: 11px;
+    font-size: 13px; /* Add margin between list items */
   }
   .GetStartedButton {
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     margin-left: 0%;
-    padding-left: 0px;
-    margin-left: 50px;
+    
+    
   }
   .ButtonName {
     background-color: red; /* Green */

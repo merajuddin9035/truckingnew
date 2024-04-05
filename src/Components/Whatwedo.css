@@ -8,9 +8,17 @@
 .whatwedo{
   width: 50%;
   height: 50%;
-
-
- 
-
-
+}
+@media screen and (max-width: 768px) {
+  .whatwedo-container{
+    text-align: center;
+    justify-content: center;
+  
+  
+  }
+  
+  .whatwedo{
+    width: 100%;
+    height: 100%;
+  }
 }

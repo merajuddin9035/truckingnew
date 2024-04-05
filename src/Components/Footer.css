@@ -196,13 +196,13 @@ input[type="text"]::placeholder {
 @media only screen and (max-width: 768px) {
   .footerContainer {
     .subscribeinput[type="text"] {
-      padding: 16px 40px;
+      padding: 10px 10px;
       border: 1px solid #ccc;
       border-radius: 3px;
-      font-size: 15px;
+      font-size: 18px;
       font-family: Arial, sans-serif;
       transition: border-color 0.3s ease;
-      width: 30%;
+      width: 40%;
       border-radius: 20px;
       border-color: #333;
       margin-left: 100px;
@@ -216,7 +216,7 @@ input[type="text"]::placeholder {
       color: #999; /* Placeholder text color */
     }
     .Subscribe {
-      padding: 15px 40px;
+      padding: 15px 25px;
       background-color: #484c51;
       color: #fff;
       border: none;

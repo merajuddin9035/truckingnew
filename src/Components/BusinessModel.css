@@ -6,7 +6,17 @@
 .Businessmodel{
   width: 50%;
   height: 50%;
- 
-
-
 }
+
+@media screen and (max-width: 768px) {
+  .businessmodel-container{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .Businessmodel{
+    width: 100%;
+    height: 100%;
+  }
+}
+

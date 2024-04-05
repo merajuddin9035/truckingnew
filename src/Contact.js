@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
+
 const Contact = () => {
   return (
     <>
@@ -46,9 +47,12 @@ const Contact = () => {
           </div>
           <button type="submit">Submit</button>
         </form>
+        
       </div>
       
      </div>
+
+     
     </>
   );
 };

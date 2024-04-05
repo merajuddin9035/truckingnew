@@ -59,23 +59,32 @@
 
 
 .ButtonName {
-  background-color: red; /* Green */
+  display: inline-block;
+  margin: 10px;
+}
+
+.PopupButton {
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 62px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px 10px;
-  margin: 10px 0;
+  font-size: 16px;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.ButtonName:hover {
-  background-color: green;
-  color: #fff;/* Darker Green */
+.PopupButton:hover {
+  background-color: #45a049; /* Darker Green */
 }
+
+.PopupButton:active {
+  background-color: #3e8e41; /* Active Green */
+}
+
 
 .ButtonName:active {
   background-color: rgb(3, 5, 33);; /* Active Green */

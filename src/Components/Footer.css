@@ -255,6 +255,11 @@ input[type="text"]::placeholder {
     border-color: #333;
     margin-left: 0px;
   }
+
+  .footerContainer form {
+    padding: 0px;
+     
+   }
 }
 
 

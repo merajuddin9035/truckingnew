@@ -1,247 +1,81 @@
-.conatiner1{
-    display: flex;
-    justify-content: space-between;
-    flex-direction:row ;
-    margin: 80px 90px;
-    border-radius: 40px;
-    
-  
-
+.contactus-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container{
-    color: #fff; /* Set text color */
-    background-color: rgb(3, 5, 33);
-    border-radius: 20px;
+.contactus {
+  max-width: 100%;
 }
 
-.contact {
-    padding: 30px;
-  }
-  
-  .contact h1 {
-    font-size: 2rem;
-    color: #fff; 
-  }
-  
-  .contact p {
-    font-size: 1.5rem;
-    color: #fff; 
-  
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-    display: flex;
-  }
-  
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  
-  .contact-info h2 {
-    font-size: 1.5rem;
-    color: orangered; 
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  }
-  
-  .contact-info p {
-    font-size: 1rem;
-    color: #fff; 
-  }
+.form-group {
+  margin-bottom: 20px;
+}
 
-  .contact-form {
-    padding: 50px 120px; 
-    margin: 20px 50px;
-    background-color: rgb(3, 5, 33);
-    border-radius: 40px; 
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 20px; 
-    color: #fff; 
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form form div {
-    margin-bottom: 15px; 
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form textarea {
-    width: 100%; /* Make inputs and textarea take full width */
-    padding: 10px; /* Add padding inside inputs and textarea */
-    border: 1px solid #ccc; /* Add border */
-    border-radius: 20px; /* Add border radius */
-  }
-  
-  .contact-form textarea {
-    height: 100px; /* Set height for the textarea */
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: #007bff; /* Set background color for the submit button */
-    color: #fff; /* Set text color for the submit button */
-    padding: 10px 20px; /* Add padding inside the button */
-    border: none; /* Remove border */
-    border-radius: 50px; /* Add border radius */
-    cursor: pointer; /* Add cursor pointer on hover */
-    transition: background-color 0.3s ease; /* Add transition effect */
-  }
-  
-  .contact-form button[type="submit"]:hover {
-    background-color: #0056b3; /* Change background color on hover */
-  }
-  
-  .scroll-up {
-    position: fixed; /* Position the scroll-up button */
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    background-color: #007bff; /* Set background color */
-    color: #fff; /* Set text color */
-    padding: 10px 20px; /* Add padding inside the button */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add border radius */
-    cursor: pointer; /* Add cursor pointer on hover */
-    transition: background-color 0.3s ease; /* Add transition effect */
-  }
-  
-  .scroll-up:hover {
-    background-color: #0056b3; /* Change background color on hover */
-  }
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
 
- 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px); /* Adjust width and subtract border width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px; /* Add margin to separate input fields */
+}
 
+/* Remove border line on upper side of input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-top: none;
+}
 
-  
-  @media screen and (max-width: 768px) {
-    .conatiner1{
-      margin: 20px 10px;
-      border-radius: 20px;
-      flex-direction:column ;
+.contactusbutton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactusbutton:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .contactus-container {
+    text-align: center;
+    justify-content: center;
   }
   
-  .container{
-      color: #fff; /* Set text color */
-      background-color: rgb(3, 5, 33);
-      border-radius: 20px;
+  .contactus {
+    width: 100%;
+    height: 100%;
   }
-  
-  .contact {
-      padding: 100px  60px;
-    }
-    
-    .contact h1 {
-      font-size: 1.5rem;
-      color: #fff; 
-    }
-    
-    .contact p {
-      font-size: 1rem;
-      color: #fff; 
-    
-    }
-    
-    .contact-info {
-      
-      justify-content: space-between;
-      margin-top: 10px;
-    
-    }
-    
-  
-    
-    .contact-info h2 {
-      font-size: 1rem;
-      color: orangered; 
-  
-    }
-    
-    .contact-info p {
-      font-size: 0.5rem;
-      color: #fff; 
-    }
-  
-    .contact-form {
-      padding: 10px 50px;
-      background-color: rgb(3, 5, 33);
-      border-radius: 20px;
-      width: 250px;
-      margin-left: 10px;
- 
-
-    }
-    
-    .contact-form h2 {
-     padding: 10px;
-      color: #fff; 
-    }
-    
-    .contact-form form {
-      display: flex;
-      flex-direction: column;
-      
-    }
-    
-    .contact-form form div {
-      margin-bottom: 15px; 
-    }
-    
-    .contact-form input[type="text"],
-    .contact-form textarea {
-      
-     /* Make inputs and textarea take full width */
- /* Add padding inside inputs and textarea */
-      border: 1px solid #ccc; /* Add border */
-      border-radius: 20px; /* Add border radius */
-    }
-    
-    .contact-form textarea {
-     
-      width: 250px;
-      height: 100px; /* Set height for the textarea */
-    }
-    
-    .contact-form button[type="submit"] {
-      background-color: #ff0000; /* Set background color for the submit button */
-      color: #fff;
-      margin: 10px; /* Set text color for the submit button */
-      padding: 15px; /* Add padding inside the button */
-      border: none; /* Remove border */
-      border-radius: 50px; /* Add border radius */
-      cursor: pointer; /* Add cursor pointer on hover */
-      transition: background-color 0.3s ease; /* Add transition effect */
-    }
-
-    .contact-form button :hover{
-       background-color: #3ede12;
-    }
-    
-    .contact-form button[type="submit"]:hover {
-      background-color: #1174de; /* Change background color on hover */
-    }
-    
-    .scroll-up {
-      position: fixed; /* Position the scroll-up button */
-      bottom: 20px; /* Distance from the bottom */
-      right: 20px; /* Distance from the right */
-      background-color: #007bff; /* Set background color */
-      color: #fff; /* Set text color */
-      padding: 10px 20px; /* Add padding inside the button */
-      border: none; /* Remove border */
-      border-radius: 5px; /* Add border radius */
-      cursor: pointer; /* Add cursor pointer on hover */
-      transition: background-color 0.3s ease; /* Add transition effect */
-    }
-    
-    .scroll-up:hover {
-      background-color: #0056b3; /* Change background color on hover */
-    }
-  
-
-  }
-  
+}

@@ -1,7 +1,10 @@
 .navbar {
   background-color: rgb(3, 5, 33); /* Background color for the navbar */
   color: #fff; /* Text color */
-  padding: 5px 0; /* Add padding at the top and bottom */
+  padding: 5px 15px; /* Add padding at the top and bottom */
+  font-size: 25px;
+  
+
 
 }
 
@@ -10,7 +13,7 @@
   justify-content: space-between; /* Space out the items */
   align-items: center; /* Align items vertically */
   max-width: 1300px; /* Set maximum width */
-  margin: 20px 30px; /* Center the navbar horizontally */
+  margin: 20px 100px; /* Center the navbar horizontally */
   padding: 0px; /* Add padding to the sides */
 
 }
@@ -22,9 +25,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
+  margin-bottom: 60px;
 
 
 }
+
 
 
 
@@ -33,13 +38,13 @@
 
 .menu ul {
   list-style: none; /* Remove bullet points */
-  margin: 0; /* Remove default margin */
+  margin: 0px; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
 
 .menu ul li {
   display: inline-block; /* Display list items horizontally */
-  margin-right: 20px; /* Add margin between list items */
+  margin-right: 90px; /* Add margin between list items */
 }
 
 .menu ul li:last-child {
@@ -54,6 +59,9 @@
 
 .menu ul li a:hover {
   color: orangered; /* Change text color on hover */
+}
+.active {
+  color: orangered; /* Orange color for the active link */
 }
 
 
@@ -116,7 +124,7 @@
   }
 
   .menu {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
   .menu ul li {
     display: inline-block; /* Display list items horizontally */

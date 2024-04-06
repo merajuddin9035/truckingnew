@@ -7,6 +7,32 @@
   background-color: #ffff;
 }
 
+.masoodctmiusa {
+  color: #007bff; /* Link color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-decoration: none; /* Remove underline */
+}
+
+.masoodctmiusa:hover {
+  color: #0056b3; /* Link color on hover */
+}
+.AtweightBridge{
+  color: #007bff; /* Link color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-decoration: none; /* Remove underline */
+}
+
+.AtweightBridge:hover{
+  color: #0056b3;
+}
+
+.maps{
+  display: flex;
+  justify-content: space-between;
+}
+
 .footerContainer .a {
   flex: 1 1 100%;
   background-color: #120225;

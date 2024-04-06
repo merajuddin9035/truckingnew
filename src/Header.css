@@ -16,7 +16,7 @@
     color: #fff;
     padding: 20px 0;
 }
-.bookcall{
+.bookcalls{
     padding: 15px 80px;
     background-color: orangered;
     color: #fff;
@@ -36,12 +36,12 @@
     background-repeat: no-repeat;
     background-position: right;
     border-radius: 80%;
-    width: 430px; /* Set the width */
-    height: 430px;
+    width: 380px; /* Set the width */
+    height: 380px;
     position: absolute;
-    right: 10px;
+    right: 50px;
     top: 0;
-    filter: brightness(0.7); 
+
   
 
 }
@@ -55,6 +55,7 @@
       width: 50px;
       height: 50px; /* Adjust the width as needed */
       margin: 20px 30px; /* Center the image */
+      
     }
   
     .HeaderLine {

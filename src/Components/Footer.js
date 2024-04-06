@@ -285,6 +285,11 @@ c-15 21 -228 302 -472 625 l-444 587 -79 0 -79 0 113 -148z"
                     </Link>
                   </ul>
                 </div>
+                <div className="maps">
+                <a className="masoodctmiusa" href="https://maps.app.goo.gl/PhwbpNbpA2YqhPNm8" target="_blank" rel="noopener noreferrer">MasoodCt canton,MI USA</a>
+                <a className="AtweightBridge" href="hhttps://maps.app.goo.gl/Q9nyjNUfkfHMLKRk6" target="_blank" rel="noopener noreferrer">AtWeight Bridge,Keondhar,Barbil,odisha,india</a>
+
+                </div>
               </div>
             </div>
           </div>
@@ -292,10 +297,14 @@ c-15 21 -228 302 -472 625 l-444 587 -79 0 -79 0 113 -148z"
         <div className="ab">
           <p className="cd">
             © 2024 Advait Trucking Automation. All rights reserved.
+           
           </p>
           <p className="ef">Terms. Privacy Policy</p>
         </div>
+        
+
       </div>
+     
    </>
   );
 };

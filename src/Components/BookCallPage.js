@@ -1,6 +1,7 @@
 import React from 'react'
 import  { useState } from 'react';
 import './BookCallPage.css';
+import { InlineWidget } from "react-calendly";
 
 export const BookCallPage = () => {
 
@@ -17,7 +18,7 @@ export const BookCallPage = () => {
   return (
    <>
    <div className="containersss">
-      <h2>Book a Call With Us</h2>
+      <h2>Please Submit Your Info</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
@@ -49,8 +50,13 @@ export const BookCallPage = () => {
             required
           />
         </div>
-        <button type="submit" className='submit'>Book Now</button>
+        <button type="submit" className='submit'>Submit</button>
       </form>
+
+    </div>
+
+    <div className="App">
+      <InlineWidget url="https://calendly.com/mdmeraju784" />
     </div>
    </>
   )

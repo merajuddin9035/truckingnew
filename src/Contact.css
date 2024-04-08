@@ -94,11 +94,11 @@ textarea:focus {
   .form-container h2 {
     text-align: center;
     margin-bottom: 10px;
+    height: 40px;
+    width: 30px;
   }
   
-  .form-group {
-    margin-bottom: 20px;
-  }
+ 
   
   .form-group label {
     display: block;

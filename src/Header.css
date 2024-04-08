@@ -52,9 +52,13 @@
     }
   
     .img {
-      width: 50px;
-      height: 50px; /* Adjust the width as needed */
-      margin: 20px 30px; /* Center the image */
+      width: 80px;
+      height: 80px;
+      margin-top: 15px; 
+      position: absolute;
+      right: 10px;
+      top: 0;
+      
       
     }
   

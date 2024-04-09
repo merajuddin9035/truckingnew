@@ -50,6 +50,7 @@ p {
  
   .HeadContainer {
     padding: 20px; /* Add padding for better spacing */
+    margin-left: 30px;
   }
 
   .HeadingAutomation {

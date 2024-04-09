@@ -55,7 +55,7 @@
         text-transform: uppercase; /* Convert text to uppercase */
         letter-spacing: 2px; /* Adjust letter spacing */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
-        margin-bottom: 10px; /* Add space below the heading */
+        margin-bottom: 20px; /* Add space below the heading */
     }
     .ReceiptIcon{
         font-size: 5px; /* Adjust font size as needed */

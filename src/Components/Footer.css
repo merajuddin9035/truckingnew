@@ -284,6 +284,7 @@ input[type="text"]::placeholder {
   
   .footerContainer .k {
     flex: 1 1 50%;
+    margin: 20px;
   }
   
   .footerContainer .l {
@@ -355,14 +356,16 @@ input[type="text"]::placeholder {
   
   .footerContainer .cd {
     font-size: 15px;
+    margin: 15px;
   }
   
   .footerContainer .ef {
     font-size: 12px;
     color: #333;
+    margin: 10px;
   }
   .subscribeinput[type="text"] {
-    padding: 7px 31px;
+    padding: 9px 10px;
     border: 1px solid #ccc;
     font-size: 17px;
     font-family: Arial, sans-serif;
@@ -378,6 +381,7 @@ input[type="text"]::placeholder {
   }
   
   input[type="text"]::placeholder {
+    
     color: #999; /* Placeholder text color */
   }
   .Subscribe {

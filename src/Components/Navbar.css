@@ -1,94 +1,134 @@
-.navbar {
-  background-color: rgb(3, 5, 33);
-  color: #fff;
-  padding: 10px 15px; /* Increased padding for better spacing */
-  font-size: 20px; /* Reduced font size for smaller screens */
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1300px;
-  margin: 20px auto;
-  padding: 0;
-}
-
-.Advaitheading {
-  font-size: 32px; /* Reduced font size for smaller screens */
-  margin-bottom: 20px; /* Reduced margin for smaller screens */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-
-.menu ul {
-  list-style: none;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.menu ul li {
-  display: inline-block;
-  margin-right: 20px;
+.body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url('https://5.imimg.com/data5/ZP/MP/OF/GLADMIN-3061/tata-signa-3118-t-12-tyres-distribution-truck-gvw-31000-kg.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.menu ul li:last-child {
-  margin-right: 0;
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px; /* Changed height to pixels */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.menu ul.active {
-  display: flex; /* Change display to flex */
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  flex-wrap: wrap; /* Wrap the items if they exceed the width */
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.menu ul.active li {
-  margin: 10px; /* Add margin between list items */
+.navbar .links {
+  display: flex;
+  gap: 2rem;
 }
 
-.menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s ease;
-}
-
-.menu ul li a:hover {
-  color: orangered;
-}
-
-.toggle-menu {
-  display: none;
+.navbar .toggle_btn {
+  color: #000;
+  font-size: 1.5rem;
   cursor: pointer;
+  display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column; /* Ensure items are stacked vertically */
-    justify-content: flex-start; /* Align items to the top */
+.action_btn {
+  background-color: orangered;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Changed scale to transform */
+}
+
+.action_btn:hover {
+  transform: scale(1.05); /* Fixed syntax */
+}
+
+.action_btn:active {
+  transform: scale(0.95); /* Fixed syntax */
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px; /* Changed top to pixels */
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+
+  
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
   }
 
-  .toggle-menu {
+  .navbar .toggle_btn {
     display: block;
   }
 
-  .menu ul {
-    display: none;
-    
+  .dropdown_menu {
+    display: block;
   }
 
-  .menu ul.active {
-    display: flex; /* Change display to flex */
-    flex-direction: column; /* Ensure items are stacked vertically */
-    align-items: center; /* Align items to the center */
+  .navbar {
+    padding: 0 20px; /* Add padding to the sides */
+  }
+
+  .body {
+    height: 35vh;
     width: 100%;
-     /* Take up full width */
+    background-color: #000;
+    background-image: url('https://5.imimg.com/data5/ZP/MP/OF/GLADMIN-3061/tata-signa-3118-t-12-tyres-distribution-truck-gvw-31000-kg.png');
+    background-size: cover;
+    background-position: center;
   }
 
-  .menu ul.active li {
-    margin: 0; /* Reset margin */
-    
+ 
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
 }

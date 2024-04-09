@@ -26,8 +26,8 @@ function App() {
         <Route path="/BookCallPage" element={<BookCallPage/>}/>
       </Routes>
       
-      <a href="#top" className="scroll-up">Back to top</a> 
-      <Footer/>
+     
+    
       <div className="App">
       <PopupWidget
         url="https://calendly.com/mdmeraju784"
@@ -41,7 +41,11 @@ function App() {
         color="#00a2ff"
       />
     </div>
-      
+    <Footer/>
+  <div className='backtotop'>
+  <a href="#top" className="scroll-up">Back to top</a> 
+
+  </div>      
  
     </>
   );

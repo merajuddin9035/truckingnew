@@ -1,52 +1,69 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  // Function to close the menu
-  const closeMenu = () => {
-    setShowMenu(false);
+    setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="navbar">
-      <h1 className="Advaitheading">ADVAIT TRUCKING AUTOMATION</h1>
-      <div className={`navbar-container ${showMenu ? "active" : ""}`}>
-        <div className="menu">
-          <ul className={showMenu ? "active" : ""}>
+    <>
+      <div className="body">
+        <div className="navbar">
+          <div className="logo">
+            <a href="/">Advait Trucking</a>
+          </div>
+          <ul className="links">
             <li>
-              <Link to="/" onClick={closeMenu}> {/* Close menu when a link is clicked */}
-                Home
-              </Link>
+              <a href="/">Home</a>
             </li>
             <li>
-              <Link to="/finance" onClick={closeMenu}>
-                Finance Application
-              </Link>
+              <a href="/about">About</a>
             </li>
             <li>
-              <Link to="/contact" onClick={closeMenu}>
-                Contact us
-              </Link>
+              <a href="/services">Services</a>
             </li>
             <li>
-              <Link to="/about" onClick={closeMenu}>
-                About us
-              </Link>
+              <a href="/contact">Contact</a>
             </li>
-           
           </ul>
-        </div>
-        <div className="toggle-menu" onClick={toggleMenu}>
-          &#9776;
+          <a href="/" className="action_btn">
+            Get Started
+          </a>
+          <div className="toggle_btn" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          </div>
         </div>
       </div>
-    </nav>
+
+      {isOpen && (
+        <div className="dropdown_menu">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/" className="action_btn">
+                Get Started
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </>
   );
 };

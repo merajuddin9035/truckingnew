@@ -1,134 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-.body {
-  height: 100vh;
-  background-color: #000;
-  background-image: url('https://5.imimg.com/data5/ZP/MP/OF/GLADMIN-3061/tata-signa-3118-t-12-tyres-distribution-truck-gvw-31000-kg.png');
-  background-size: cover;
-  background-position: center;
-}
+/* Navbar.css */
 
 .navbar {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  height: 60px; /* Changed height to pixels */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 20px; /* Add padding to the Navbar */
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.navbar .logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar .links {
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar .toggle_btn {
-  color: #000;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.action_btn {
-  background-color: orangered;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease; /* Changed scale to transform */
-}
-
-.action_btn:hover {
-  transform: scale(1.05); /* Fixed syntax */
-}
-
-.action_btn:active {
-  transform: scale(0.95); /* Fixed syntax */
-}
-
-.dropdown_menu {
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px; /* Changed top to pixels */
-  height: 0;
-  width: 300px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown_menu.open {
-  height: 240px;
-}
-
-.dropdown_menu li {
-  padding: 0.7rem;
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.dropdown_menu .action_btn {
-  width: 100%;
+.logo a {
+  color: #333; /* Logo text color */
+  font-size: 3rem;
+  text-decoration: none;
+  font-weight: bold; /* Add bold font weight */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.logo a:hover {
+  transform: scale(1.1); /* Scale up on hover for a subtle interactive effect */
+}
+
+
+.links {
+  list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 60px;
 }
 
-/* Responsive Design */
+.links a {
+  color: #333; /* Link text color */
+  text-decoration: none;
+  font-size: 1.6rem; /* Adjust font size as needed */
+  font-weight: bold; /* Add bold font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  transition: color 0.3s ease; /* Add smooth transition effect */
+}
 
-@media (max-width: 992px) {
+.links a:hover {
+  color: orangered; /* Change text color on hover */
+}
 
-  
-  .navbar .links,
-  .navbar .action_btn {
-    display: none;
-  }
 
-  .navbar .toggle_btn {
-    display: block;
-  }
+.links li a {
+  color: #333; /* Links text color */
+  text-decoration: none;
+  font-size: 1rem;
+}
 
-  .dropdown_menu {
-    display: block;
-  }
 
+
+.toggle_btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
   .navbar {
-    padding: 0 20px; /* Add padding to the sides */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .body {
-    height: 35vh;
+  .links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    background-color: #000;
-    background-image: url('https://5.imimg.com/data5/ZP/MP/OF/GLADMIN-3061/tata-signa-3118-t-12-tyres-distribution-truck-gvw-31000-kg.png');
-    background-size: cover;
-    background-position: center;
+    padding-left: 0;
   }
 
- 
-}
+  .links.open {
+    display: flex;
+  }
 
-@media (max-width: 576px) {
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
+  .toggle_btn {
+    display: block;
+  }
+
+  .logo a {
+    color: #333; /* Logo text color */
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: bold; /* Add bold font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+    margin-left: 20px;
   }
 }

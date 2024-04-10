@@ -1,141 +1,22 @@
-.contactus-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.contactus {
-  max-width: 100%;
-}
-
-.form-container {
-  position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.form-container h2 {
+.contactus-container{
   text-align: center;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: calc(100% - 22px); /* Adjust width and subtract border width */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px; /* Add margin to separate input fields */
-}
-
-/* Remove border line on upper side of input fields */
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: none;
-  border-top: none;
-}
-
-.contactusbutton {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contactusbutton:hover {
-  background-color: #0056b3;
+.contactus{
+  width: 60%;
+  height: 30%;
 }
 
 @media screen and (max-width: 768px) {
-  .contactus-container {
-
-      
-    height: 100vh;
-  
-  }
-  
-  .contactus {
-    max-width: 114%;
-    
-  }
-  
-  .form-container {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    
-
-    
-  }
-  
-  .form-container h2 {
+  .contactus-container{
     text-align: center;
-    margin-bottom: 10px;
-    height: 40px;
-    width: 30px;
+    justify-content: center;
+    margin: 25px;
   }
   
- 
-  
-  .form-group label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: calc(100% - 22px); /* Adjust width and subtract border width */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px; /* Add margin to separate input fields */
-  }
-  
-  /* Remove border line on upper side of input fields */
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    outline: none;
-    border-top: none;
-  }
-  
-  .contactusbutton {
-    display: block;
+  .contactus{
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contactusbutton:hover {
-    background-color: #0056b3;
+    height: 100%;
   }
 }

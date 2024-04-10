@@ -61,31 +61,77 @@
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: rgb(3, 5, 33);
+    color: #fff;
   }
 
   .links {
     display: none;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    padding-left: 0;
+    width: 70%;
+    margin:10px;
+    color: #fff;
+    padding: 50px ;
+    background-color: rgb(3, 5, 33);
+    color: #fff;
+
+
   }
 
   .links.open {
     display: flex;
+    
+
+  
+  
+  
   }
 
   .toggle_btn {
     display: block;
+    margin-top: 20px;
   }
 
   .logo a {
-    color: #333; /* Logo text color */
-    font-size: 2.5rem;
+    color:#fff; /* Logo text color */
+    font-size: 2.7rem;
     text-decoration: none;
     font-weight: bold; /* Add bold font weight */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
     transition: transform 0.3s ease; /* Add smooth transition effect */
     margin-left: 20px;
+    
   }
+
+  
+.links {
+  gap: 20px;
+  
+}
+
+.links a {
+  color: #333; /* Link text color */
+  text-decoration: none;
+  font-size: 1.6rem; /* Adjust font size as needed */
+  font-weight: bold; /* Add bold font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  transition: color 0.3s ease; /* Add smooth transition effect */
+  
+}
+
+.links a:hover {
+  color: orangered; /* Change text color on hover */
+  
+}
+
+.links li a {
+   /* Links text color */
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+
+
 }

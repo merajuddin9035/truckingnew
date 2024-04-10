@@ -12,13 +12,14 @@ margin:20px 80px;
 @media screen and (max-width: 768px) {
   .contactus-container{
 
-    margin:0px 0px;
+    margin:10px 0px;
     
   }
   
   .contactus{
     width: 50vh;
-    height: 55vh;
+    height: 25vh;
+    margin-left: 0px;
 
   }
 }

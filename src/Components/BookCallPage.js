@@ -1,19 +1,28 @@
-import React from 'react'
-import  { useState } from 'react';
-import './BookCallPage.css';
+import axios from 'axios';
+import { useState } from 'react';
 import { InlineWidget } from "react-calendly";
+import './BookCallPage.css'
+
 
 export const BookCallPage = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('/submit', { name, email, phone });
+      console.log('User saved:', response.data);
+      // Optionally, reset form fields after successful submission
+      setName('');
+      setEmail('');
+      setPhone('');
+    } catch (error) {
+      console.error('Error saving user:', error);
+    }
+  };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Here you can perform any action like submitting the form data to a server
-        console.log('Form submitted with:', { name, email, phone });
-      };
     
   return (
    <>

@@ -1,13 +1,13 @@
 import React from 'react';
 import './Contact.css';
-import contactusframesss from './Assets/contactusframesss.png'
+import contactusframess from './Assets/contactusframess.png'
 
 
 const Contact = () => {
   return (
     <>
    <div className='contactus-container'> 
-        <img className="contactus" src={contactusframesss} alt="contactus" />
+        <img className="contactus" src={contactusframess} alt="contactus" />
         </div>
      
     </>

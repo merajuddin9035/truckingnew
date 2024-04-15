@@ -28,7 +28,7 @@ export const Footer = () => {
             <form action=" w-full">
               <div className="inputbutton">
               <input className='subscribeinput' type="text" placeholder='yourmail@.com' />
-              <button class="Subscribe">Subscribe</button>
+              <button className="Subscribe">Subscribe</button>
               </div>
             </form>
           </div>
@@ -174,7 +174,7 @@ export const Footer = () => {
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
-                      stroke-width="0"
+                      strokeWidth="0"
                       viewBox="0 0 1024 1024"
                       className="r"
                       height="25"

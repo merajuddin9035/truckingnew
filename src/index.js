@@ -1,16 +1,17 @@
-// index.js (or index.tsx)
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css'; // Import the index.css file
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+const container = document.getElementById('root');
+const root = createRoot(container); // Create a root.
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+      <App />
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
+

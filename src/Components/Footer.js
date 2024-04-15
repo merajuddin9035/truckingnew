@@ -1,5 +1,7 @@
 // Footer.js
-import React from "react";
+import React, { useRef } from 'react';
+
+import emailjs from '@emailjs/browser'
 import "./Footer.css"; // Import the Footer.css file
 // import CallIcon from "@mui/icons-material/Call";
 // import FacebookIcon from "@mui/icons-material/Facebook";
@@ -11,6 +13,27 @@ import "./Footer.css"; // Import the Footer.css file
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_hoorh4b', 'template_sn45t12', form.current, 'zE94gTkIS_pgpHVU6')
+      .then(
+        (result) => {
+          console.log('Email sent successfully:', result.text);
+        },
+        (error) => {
+          console.error('Failed to send email:', error.text);
+        }
+      );
+
+    // Reset form after submission (optional)
+    form.current.reset();
+  };
+
   return (
    <>
    <div className="footerContainer ">
@@ -21,18 +44,21 @@ export const Footer = () => {
               <span className="subscribebutton">
                 Subscribe
               </span>{" "}
-              us for get news events and offers
+              us for getting news events and offers
             </p>
           </div>
           <div className="e">
-            <form action=" w-full">
+            <form ref={form} onSubmit={sendEmail} action=" w-full" >
               <div className="inputbutton">
-              <input className='subscribeinput' type="text" placeholder='yourmail@.com' />
-              <button className="Subscribe">Subscribe</button>
+              <input className='subscribeinputss' type="email" name="from_email"  placeholder='yourmail@.com' />
+              <button className="Subscribes" type="submit" value="Send" >Subscribe</button>
               </div>
             </form>
           </div>
         </div>
+
+ 
+
 
         <div className="i">
           <div className="j">
@@ -184,40 +210,6 @@ export const Footer = () => {
                       <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"></path>
                     </svg>
                   </div>
-                  {/* <div className="s">
-                    <svg
-                      version="1.0"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 256.000000 256.000000"
-                      preserveAspectRatio="xMidYMid meet"
-                      className="ss"
-                    >
-                      <g
-                        transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)"
-                        fill="#000000"
-                        stroke="none"
-                      >
-                        <path
-                          d="M203 2542 c-100 -35 -171 -115 -193 -216 -8 -36 -10 -356 -8 -1076
-l3 -1025 28 -57 c32 -64 80 -111 146 -142 46 -21 49 -21 1101 -21 l1055 0 57
-28 c64 32 111 80 142 146 21 46 21 49 21 1101 0 1052 0 1055 -21 1101 -31 66
--78 114 -142 146 l-57 28 -1040 2 c-978 2 -1043 1 -1092 -15z m948 -727 c101
--134 189 -244 194 -244 6 0 106 110 223 245 l213 244 130 0 131 0 -40 -47
-c-23 -27 -151 -174 -286 -328 -135 -154 -244 -285 -242 -291 2 -6 150 -204
-328 -440 179 -236 328 -435 332 -442 6 -9 -48 -12 -257 -12 l-264 0 -201 264
-c-111 146 -206 268 -211 271 -5 3 -116 -116 -246 -265 l-236 -270 -131 0
-c-124 0 -130 1 -116 18 8 9 140 161 294 337 153 176 285 328 292 337 12 15
--20 60 -264 380 -153 200 -299 391 -327 426 l-49 62 275 0 274 0 184 -245z"
-                        />
-                        <path
-                          d="M842 1762 c62 -81 277 -362 478 -625 l365 -477 73 0 74 0 -29 38
-c-15 21 -228 302 -472 625 l-444 587 -79 0 -79 0 113 -148z"
-                        />
-                      </g>
-                    </svg>
-                  </div> */}
                   <div>
                     <svg
                       stroke="currentColor"

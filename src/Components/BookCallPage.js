@@ -7,12 +7,16 @@ export const BookCallPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [age, setAge] = useState('');
+  const [address, setAddress] = useState('');
+  const [city, setCity] = useState('');
+  const [zip, setZip] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       // Send form data to backend API
-      const response = await axios.post('http://localhost:5000/submit', { name, email, phone });
+      const response = await axios.post('http://localhost:5000/submit', { name, email, phone, age, zip, address, city});
       console.log('User saved:', response.data);
 
       // Send email using emailjs-com
@@ -22,6 +26,10 @@ export const BookCallPage = () => {
       setName('');
       setEmail('');
       setPhone('');
+      setAge('');
+      setZip('');
+      setAddress('');
+      setCity('');
     } catch (error) {
       console.error('Error saving user:', error);
     }
@@ -80,6 +88,54 @@ export const BookCallPage = () => {
               name="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="age">Age:</label>
+            <input
+              className='submitinfoinput'
+              type="number"
+              id="age"
+              name="age"
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="address">Address:</label>
+            <input
+              className='submitinfoinput'
+              type="text"
+              id="address"
+              name="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="city">City:</label>
+            <input
+              className='submitinfoinput'
+              type="text"
+              id="city"
+              name="city"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="zip">Zip:</label>
+            <input
+              className='submitinfoinput'
+              type="number"
+              id="zip"
+              name="zip"
+              value={zip}
+              onChange={(e) => setZip(e.target.value)}
               required
             />
           </div>
